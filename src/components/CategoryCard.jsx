@@ -1,3 +1,4 @@
+import { MapPinIcon } from "@heroicons/react/24/outline";
 /* eslint-disable react/prop-types */
 import { useContext } from "react";
 import { DataContext } from "../context/DataProvider";
@@ -19,7 +20,12 @@ const CategoryCard = ({ data, redirectPath, dataKey }) => {
       onClick={handleSelect}
     >
       <img src={image} alt={name} className="h-40 rounded-lg w-40" />
-      <p className="text-gray-50 absolute bottom-0">{name}</p>
+      <div className="flex flex-row space-x-2">
+          <p className="text-gray-50 flex absolute bottom-0">
+            <MapPinIcon className="h-5 w-5 mr-2 text-gray-50" />
+            {name}
+          </p>
+      </div>
     </button>
   );
 };

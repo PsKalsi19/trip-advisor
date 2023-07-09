@@ -28,7 +28,7 @@ const List = () => {
             <p className="text-gray-50"><span className="text-indigo-500 font-bold">Reviews:</span>{selectedDestination.reviews} </p>
             <p className="text-gray-50"><span className="text-indigo-500 font-bold">Location:</span>{selectedDestination.location} </p>
             <p className="text-gray-50"><span className="text-indigo-500 font-bold">Opening Hours:</span>{selectedDestination.openingHours} </p>
-           <a href={selectedDestination.website} target="_blank" rel="noopener noreferrer"></a>
+           <a className="text-red-400" href={selectedDestination.website} target="_blank" rel="noopener noreferrer">Website</a>
         </div>
       </div>
     </div>
